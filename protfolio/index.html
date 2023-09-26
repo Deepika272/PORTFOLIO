@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0;
+        }
+
+        nav {
+            height: 597px;
+            width: 200px;
+            border: solid;
+            background-color: #D9AFD9;
+            background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+            ;
+            position: fixed;
+            z-index: 1000;
+        }
+
+        .nav-items {
+            margin-top: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 150px;
+            line-height: 70px;
+
+        }
+
+        .nav-logo img {
+            width: 70%;
+            height: 130px;
+            border-radius: 50%;
+            position: absolute;
+            top: 20px;
+            left: 25px;
+        }
+
+        .nav-items a {
+            color: black;
+            font-size: 30px;
+            text-decoration: none;
+
+        }
+
+        .protfolio {
+            display: flex;
+        }
+
+        .content {
+            background-color: aqua;
+            height: 5300px;
+            width: 100%;
+            border: solid;
+        }
+
+        .home {
+
+            border: solid;
+            width: 900px;
+            height: 500px;
+            margin-left: 280px;
+            margin-top: 50px;
+            background-image: url('https://i.pinimg.com/originals/9a/1b/9c/9a1b9c38a32d3867fef6192052d28359.gif');
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* padding-top: 50px; */
+            
+
+        }
+        .home h2{
+            padding-bottom: 100px;
+        }
+
+        .home-text {
+            /* border: solid;  */
+            height: 400px;
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 40px;
+            margin-left: 90px;
+            margin-bottom: 20px;
+            color: rgb(170, 30, 86);
+        }
+
+        .home-text h1 {
+            font-size: 40px;
+            margin-left: 60px;
+            margin-top: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .home-about {
+            /* border: solid; */
+            width: 350px;
+            margin-top: 60px;
+            margin-left: 10px;
+            color: rgb(187, 105, 122);
+        }
+
+        .home-about li {
+            font-size: 17px;
+        }
+
+        .home-image img {
+            height: 300px;
+            width: 200px;
+            position: absolute;
+            top: 200px;
+            left: 850px;
+        }
+
+        .education {
+            border: solid;
+            height: 600px;
+            margin-top: 200px;
+            background-image: url('https://img95.699pic.com/photo/40106/4364.gif_wh300.gif');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .qualification svg {
+            margin-top: 20px;
+            /* color: blue; */
+
+        }
+
+        .qualification h1 {
+            text-decoration: underline;
+            margin-left: 20px;
+            /* margin-top: 10px;  */
+            /* padding: 15px; */
+        }
+
+        .degree {
+            margin-top: 70px;
+        }
+
+        .qualification h3 {
+            color: brown;
+            font-size: 30px;
+            text-decoration: underline;
+        }
+
+        .puc {
+            margin-top: 70px;
+        }
+
+        .sslc {
+            margin-top: 70px;
+        }
+
+        .qualification p {
+            color: darkblue;
+            font-size: 20px;
+
+        }
+
+        .project {
+            border: solid;
+            height: 800px;
+            margin-top: 150px;
+            background-image: url('https://media3.giphy.com/media/Slml8tbZad83wcabwq/200w.gif?cid=6c09b952yeqtkdq78e501omiwmmvsbfmid0uio1t55jz2luv&ep=v1_gifs_search&rid=200w.gif&ct=g');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .project h1 {
+            text-decoration: underline;
+            margin-top: 20px;
+            margin-left: 10px;
+            color: white;
+        }
+
+        .academic {
+            /* border: solid; */
+            height: 200px;
+            margin-top: 40px;
+            font-size: 20px;
+            color: brown;
+            text-decoration: underline;
+            margin-left: 30px;
+        }
+
+        .unacademic {
+            /* border: solid; */
+            height: 300px;
+            margin-left: 30px;
+            color: brown;
+
+        }
+
+        .clsproject {
+            /* border: solid; */
+            height: 400px;
+            margin-top: 20px;
+        }
+
+        .clsproject img {
+            height: 150px;
+            width: 150px;
+            /* margin-left: 50px;
+          margin-top: 20px; */
+            position: relative;
+            top: 190px;
+            left: -70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .clsproject {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .proabout {
+            /* border: solid; */
+            margin-top: 170px;
+            color: blueviolet;
+        }
+
+        .clsproject h4 {
+            display: inline;
+            color: forestgreen;
+            font-size: 22px;
+            margin-left: 10px;
+        }
+
+        .unacademic {
+            /* margin-top: 10px; */
+            font-size: 20px;
+            color: brown;
+            /* text-decoration: underline; */
+        }
+
+        .unacademic h3 {
+            text-decoration: underline;
+        }
+
+        .skills {
+            border: solid;
+            height: 1350px;
+            margin-top: 150px;
+            background-image: url("https://i.pinimg.com/originals/3d/08/e0/3d08e03cb40252526fee2036a67f07f1.gif");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .skills h1 {
+            text-decoration: underline;
+            color: white;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+
+        .python {
+            /* border: solid; */
+            height: 150px;
+            margin-top: 20px;
+            margin-left: 30px;
+
+        }
+
+        .python li {
+            line-height: 25px;
+            margin-left: 20px;
+            font-size: 17px;
+            color: rgb(236, 205, 47);
+        }
+
+        .python h3 {
+            text-decoration: underline;
+            color: brown;
+            font-size: 27px;
+        }
+
+        .sql {
+            /* border: solid; */
+            height: 150px;
+            margin-top: 50px;
+            margin-left: 30px;
+        }
+
+        .sql li {
+            line-height: 25px;
+            margin-left: 20px;
+            font-size: 17px;
+            color: rgb(236, 205, 47);
+
+        }
+
+        .sql h3 {
+            text-decoration: underline;
+            color: brown;
+            font-size: 27px;
+
+        }
+
+        .web {
+            /* border: solid; */
+            height: 830px;
+            margin-top: 60px;
+            margin-left: 30px;
+
+        }
+
+        .web h3 {
+            text-decoration: underline;
+            color: brown;
+            font-size: 27px;
+
+
+        }
+
+        .html {
+            /* border: solid; */
+            height: 200px;
+            margin-top: 15px;
+            margin-left: 20px;
+            color: forestgreen;
+        }
+
+        .html li {
+            font-size: 17px;
+            line-height: 20px;
+            margin-top: 10px;
+            color: rgb(236, 205, 47);
+
+        }
+
+        .css {
+            /* border: solid; */
+            height: 350px;
+            margin-top: 10px;
+            margin-left: 20px;
+            color: forestgreen;
+        }
+
+        .css li {
+            font-size: 17px;
+            line-height: 20px;
+            margin-top: 10px;
+            color: rgb(236, 205, 47);
+
+
+        }
+
+        .js {
+            /* border: solid; */
+            height: 200px;
+            margin-top: 10px;
+            margin-left: 20px;
+            color: forestgreen;
+        }
+
+        .js li {
+            font-size: 17px;
+            line-height: 20px;
+            margin-top: 10px;
+            color: rgb(236, 205, 47);
+
+        }
+
+        .info {
+            padding-bottom: 100px;
+        }
+
+        .info {
+            border: solid;
+            margin-top: 150px;
+            margin-bottom: 50px;
+            height: 500px;
+            background-color: white;
+        }
+
+        .info h1 {
+            text-decoration: underline;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .pi {
+            /* border: solid; */
+            margin-top: 40px;
+            margin-left: 50px;
+            line-height: 55px;
+        }
+
+        .pi li {
+            font-size: 20px;
+            color: brown;
+        }
+
+        .contact {
+            border: solid;
+            height: 450px;
+            margin-top: 250px;
+            background-color: black;
+            width: 100%;
+        }
+
+        .contact h1 {
+            text-decoration: underline;
+            margin-top: 20px;
+            margin-left: 10px;
+            color: white;
+
+        }
+
+        .ci {
+            /* border: solid; */
+            margin-top: 50px;
+            margin-left: 30px;
+
+        }
+
+        .ci a {
+            font-size: 25px;
+            display: flex;
+            line-height: 40px;
+            text-decoration: none;
+            color: gray;
+            display: inline;
+
+        }
+
+        .ci a:hover {
+            color: white;
+            /* display: inline; */
+        }
+
+        .social a {
+            display: inline;
+            direction: row;
+            align-items: center;
+            justify-content: center;
+            /* border: solid; */
+            /* margin-left: 100px; */
+            text-decoration: none;
+            font-size: 25px;
+            color: black;
+
+        }
+
+        .social {
+            /* border: solid; */
+            margin-left: 120px;
+            margin-top: 60px;
+        }
+
+        .social svg {
+            display: inline;
+            margin-left: 120px;
+            margin-top: 30px;
+            color: blueviolet;
+        }
+
+        .social h3 {
+            font-size: 27px;
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="protfolio">
+        <nav>
+            <div class="nav-logo">
+                <img src="C:\Users\HP\Documents\projects\protfolio\images\profile.jpg" alt="">
+            </div>
+            <div class="nav-items">
+                <a href="#hm">Home</a>
+                <a href="#qu">Qualification</a>
+                <a href="#pr">Projects</a>
+                <a href="#skil">Skills</a>
+                <a href="#pi">Personal Info</a>
+                <a href="#ct">Contact</a>
+            </div>
+
+        </nav>
+        <!-- home section starts  -->
+        <div class="content">
+            <h2 id="hm"></h2>
+            <div class="home">
+                <div class="homee">
+                    <div class="home-text">
+                        <div class="home-name">
+                            <h1><i> DEEPIKA</i></h1>
+                        </div>
+                        <div class="home-about">
+                            <ul>
+                                <li> A position in a respectable company where I can use my abilities to the fullest
+                                    contribute to the success of the organization.</li>
+                                <li> A challenging career opportunity in a growing company that offers opportunity for
+                                    advancement. </li>
+                                <li> A position with a progressive company that will fully utilize my skills and offers
+                                    opportunities for continuous professional development.</li>
+                                <li> A position with a company that offers challenges and opportunities for personal and
+                                    professional growth. </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="home-image">
+                        <img src="C:\Users\HP\Documents\projects\protfolio\images\profile.jpg" alt="">
+                    </div>
+                </div>
+                <!-- home section ends -->
+                <!-- qualification starts -->
+                <div class="education">
+                    <div class="qualification" id="qu">
+                        <h1>Qualification<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                                fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z" />
+                                <path
+                                    d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z" />
+                            </svg></h1>
+                        <div class="degree">
+                            <ul>
+                                <li>
+                                    <h3>Bachelor of Science stream(PCM)</h3>
+                                </li>
+                                <p>college:Srikrishna Devaraya Degree College Sindhanur Dist:Raichur</p>
+                                <p>Passed with 8.32 CGPA in 2023</p>
+                            </ul>
+                        </div>
+                        <div class="puc">
+                            <ul>
+                                <li>
+                                    <H3>SCIENCE (PCMB)</H3>
+                                </li>
+                                <P>College:A.V.S. Brillent PUC college Sindhanur Dist:Raichur</P>
+                                <p>Passed with 87.53% in 2019</p>
+                            </ul>
+
+                        </div>
+                        <div class="sslc">
+                            <ul>
+                                <li>
+                                    <h3>S.S.L.C</h3>
+                                </li>
+                                <P>school:Vikas Bharathi High School Sindhanur Dist:Raichur</P>
+                                <p>Paased with 92% in 2017</p>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- qualification section ends -->
+                <!-- project section starts -->
+                <div class="project" id="pr">
+                    <h1>Projects:</h1>
+                   
+                    <div class="unacademic">
+                        
+                        <div class="clsproject">
+                            <h4>Project on OTT Platform:</h4>
+                            <div class="proimage">
+                                <a href="C:\Users\HP\Documents\projects\OTT\CODES\INDEX.html"><img
+                                        src="https://thefederal.com/file/2020/07/TV-OTT-lead.gif" alt=""></a>
+                            </div>
+                            <div class="proabout">
+                                <p>OTT platform is also known as over the top platform refers to a platform where you
+                                    can acceses contents of various films and telvision by using inter net without the
+                                    traditional use of cabel or satelite.</p>
+                                <p>The rapid growth of the ott platform in INDIA can be seen by looking at the stats
+                                    showing that INDIA is all set to become the world's sixth largest OTT market by
+                                    2024. </p>
+                                <ul>
+                                    <h3>Reasons to own our OTT platform</h3>
+                                    <li>Greate user experiences</li>
+                                    <li>Provides security</li>
+                                    <li>Live streaming appels to subscribe us</li>
+                                    <li>Allows distibution of new content globaly</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- project section ends -->
+                <!-- skill section starts -->
+                <div class="skills" id="skil">
+                    <h1>Skills:</h1>
+                    <div class="python">
+                        <h3>&#x2714;Python:</h3>
+                        <ul>
+                            <li>Variables and Identifiers</li>
+                            <li>Input and Output Statements</li>
+                            <li>Operators</li>
+                            <li>Control Statements</li>
+                            <li>Collections</li>
+                            <li>Functions</li>
+                            <li>Types of arguments</li>
+                        </ul>
+
+                    </div>
+                    <div class="sql">
+                        <h3>&#x2714;Sql:</h3>
+                        <ul>
+                            <li>Data Types and Constraints</li>
+                            <li>Data Definition Language</li>
+                            <li>Data Manupulation Language</li>
+                            <li>Data Control Language</li>
+                            <li>Transaction Control Language</li>
+                            <li>Data Querry Language</li>
+                            <li>Sub Querries and Joins</li>
+                        </ul>
+
+                    </div>
+                    <div class="web">
+                        <h3>&#x2714;Web Topics:</h3>
+                        <div class="html">
+                            <h4>HTML TOPICS:</h4>
+                            <ul>
+                                <li>Stracture of Html</li>
+                                <li>Types of tags</li>
+                                <li>Media tags</li>
+                                <li>Special character</li>
+                                <li>Types of Lists</li>
+                                <li>Form elements</li>
+                            </ul>
+                        </div>
+                        <div class="css">
+                            <h4>CSS TOPICS:</h4>
+                            <ul>
+                                <li>Css Selectors</li>
+                                <li>Css Types</li>
+                                <li>Box Model</li>
+                                <li>Gradients</li>
+                                <li>Combinators</li>
+                                <li>Pseudoclass</li>
+                                <li>Pseudoelements</li>
+                                <li>Css display properties</li>
+                                <li>Position</li>
+                                <li>Css transform</li>
+                                <li>Css Transition</li>
+                            </ul>
+
+                        </div>
+                        <div class="js">
+                            <h4>JAVASCRIPT TOPICS:</h4>
+                            <ul>
+                                <li>Variables</li>
+                                <li>Operators</li>
+                                <li>Control Statements</li>
+                                <li>Functions</li>
+                                <li>Events</li>
+                                <li>Dialog Boxes</li>
+                            </ul>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- skills section ends -->
+                <!-- info section starts -->
+                <div class="info" id="pi">
+                    <div>
+                        <h1>Personal Information:</h1>
+                    </div>
+                    <div class="pi">
+                        <ul>
+                            <li>
+                                <h3>Name:DEEPIKA</h3>
+                            </li>
+                            <li>
+                                <h3>Father Name:MALLAMMA</h3>
+                            </li>
+                            <li>
+                                <h3>Mother Name:MALLAPPA</h3>
+                            </li>
+                            <li>
+                                <h3>Date of Birth:27-FEB-2001</h3>
+                            </li>
+                            <li>
+                                <h3>Gender:Female</h3>
+                            </li>
+                            <li>
+                                <h3>Status:Unmarried</h3>
+                            </li>
+                            <li>
+                                <h3>Language:Kannada,English,Telugu</h3>
+                            </li>
+                            <li>
+                                <h3>Home Address:Venkateshwar Nagar,ward no:17 Sindhanur Dist:Raichur</h3>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- info section ends -->
+                <!-- contact section starts -->
+                <div class="contact" id="ct">
+                    <h1>Contact Information:</h1>
+                    <div class="ci">
+
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                            </svg>: .......... </a> <br>
+                        <a href="https://mail.google.com/mail/u/0/#inbox">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-envelope-check-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 4.697v4.974A4.491 4.491 0 0 0 12.5 8a4.49 4.49 0 0 0-1.965.45l-.338-.207L16 4.697Z" />
+                                <path
+                                    d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z" />
+                            </svg>: itsmedeepika272@gmail.com </a>
+
+                    </div>
+                    <div class="social">
+                        <h3>Social Links:</h3>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                                height="25" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
+                            </svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                                height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                            </svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="25" height="25" fill="currentColor" class="bi bi-person-workspace"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H4Zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+                                <path
+                                    d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.373 5.373 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2H2Z" />
+                            </svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                                height="25" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                            </svg></a>
+                    </div>
+
+
+
+                </div>
+                <!-- contact section ends -->
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
